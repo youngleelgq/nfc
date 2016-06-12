@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rc_rl"
+        android:layout_width="match_parent"
+        android:layout_height="216dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/rc_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:src="@mipmap/rc_card" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/rc_ll_1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/rc_rl"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:src="@mipmap/rc_number" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/rc_tv_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="卡号:"
+                android:textColor="#47865f"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/rc_tv_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:textColor="#47865f"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rc_ll_2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/rc_ll_1"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:src="@mipmap/rc_city" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/rc_tv_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="城市:"
+                android:textColor="#47865f"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/rc_tv_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:textColor="#47865f"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rc_ll_3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/rc_ll_2"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:src="@mipmap/rc_money" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/rc_tv_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="余额:"
+                android:textColor="#47865f"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/rc_tv_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:textColor="#47865f"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
